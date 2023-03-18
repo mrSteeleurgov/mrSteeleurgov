@@ -1,116 +1,80 @@
-/* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* General styles */
+/* Personal Site CSS */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1c1c1c;
-  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-}
-
-a {
-  color: #ff69b4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffb6c1;
-}
-
-/* Header and Footer */
-header, footer {
-  background-color: #1c1c1c;
-  padding: 1rem 0;
-}
-
-/* Other styles */
-/* ... */
 
 header {
-  background-color: #ff69b4;
-  padding: 1rem 0;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
   padding: 0;
-  text-align: center;
+  list-style-type: none;
 }
 
-nav ul li {
+nav li {
   display: inline;
+  margin-right: 1rem;
 }
 
-nav ul li a {
-  color: #fff;
-  display: inline-block;
-  padding: 0 1rem;
+nav a {
   text-decoration: none;
+  color: #333;
 }
 
-nav ul li a:hover {
-  background-color: #555;
-  padding: 0.5rem 1rem;
+nav a:hover {
+  color: #555;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 section {
-  padding: 2rem;
+  margin: 2rem 0;
 }
-
-.email-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.email-item {
-  max-width: 300px;
-  text-align: center;
-}
-
-.email-item img {
-  max-width: 100%;
-}
-
-/* Below is the new stylings for the iframes */
 
 .email-container {
-  background-color: white;
-  padding: 20px; /* Add padding to create some space around the content */
-  display: inline-block;
-  width: 48%;
-  margin: 1%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
-/* Adjust the layout for smaller screens */
-@media (max-width: 767px) {
-  .email-container {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.email-container iframe {
-  border: none;
-}
-
-/* Thus endeth is the new stylings for the iframes */
-
-footer {
-  background-color: #ff69b4;
+.show-email-btn {
+  background-color: #333;
   color: #fff;
-  padding: 1rem 0;
-  text-align
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
 
+.show-email-btn:hover {
+  background-color: #555;
+}
 
+.email-content {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+}
