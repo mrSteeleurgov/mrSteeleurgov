@@ -1,80 +1,12 @@
-/* Personal Site CSS */
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-header {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-nav li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav a:hover {
-  color: #555;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-section {
-  margin: 2rem 0;
-}
+/* Your existing CSS code goes here */
 
 .email-container {
-  margin-bottom: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.show-email-btn {
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.show-email-btn:hover {
-  background-color: #555;
-}
-
-.email-content {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-top: 1rem;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
