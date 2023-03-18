@@ -80,20 +80,24 @@ section {
   max-width: 100%;
 }
 
-/* Below is the new stylings for the iframes */
+/* Stylings for the iframes */
 
 .email-container {
-  background-color: white;
-  padding: 20px; /* Add padding to create some space around the content */
-  display: inline-block;
-  width: 48%;
-  margin: 1%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+    background-color: white;
+    padding: 20px; /* Add padding to create some space around the content */
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 600px;
+    height: 600px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
-/* Adjust the layout for smaller screens */
 @media (max-width: 767px) {
   .email-container {
     width: 100%;
@@ -105,28 +109,11 @@ section {
   border: none;
 }
 
-/* Thus endeth is the new stylings for the iframes */
+/* End of stylings for the iframes */
 
 footer {
   background-color: #ff69b4;
   color: #fff;
   padding: 1rem 0;
-  text-align
-
-    /* Your existing CSS code goes here */
-
-.email-container {
-    width: 100%;
-    max-width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    overflow-y: scroll;
-    box-sizing: border-box;
-}
-  
-  .scrollable {
-    max-height: 600px;
-    overflow-y: auto;
+  text-align: center;
 }
