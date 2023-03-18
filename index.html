@@ -34,8 +34,20 @@
 
   <section id="emails">
     <h2>High-Performing Emails</h2>
-    <div class="email-container">
-      
+ 
+	  <!--making it scrollable pt 1 -->
+	  <div class="email-thumbnails">
+      <div class="email-thumbnail" data-email-id="email1">
+        <img src="path/to/email1-thumbnail.jpg" alt="Email 1 thumbnail">
+        <p>Email 1 Title</p>
+      </div>
+      <!-- Add more email thumbnails here -->
+    </div>
+
+    <div class="email-modal" id="email1">
+      <div class="email-modal-content">
+        <span class="close">&times;</span>
+      <!--thus endeth making it scrollable pt 1 -->
       <!-- here starts email html content -->
       
 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial, sans-serif" width="95%">
@@ -155,14 +167,46 @@ Team Crist</p>
 	</tbody>
 </table>
       <!--thus endeth email html content -->
-      
+	   <!--making it scrollable pt 2 -->
+	    </div>
+	    <!--thus endeth making it scrollable pt 2 -->
     </div>
+
+	  
 <div class="email-container">
   <iframe src="email2.html" width="100%" height="500px" frameborder="0" title="Email 2"></iframe>
 </div>
 <!-- Add more <div> and <iframe> tags as needed for additional email HTML files -->
   </section>
+	  <!--making it scrollable pt 3 -->
+	    <script>
+    // JavaScript code for opening and closing modals
+    document.addEventListener('DOMContentLoaded', function() {
+      const emailThumbnails = document.querySelectorAll('.email-thumbnail');
+      const closeButtons = document.querySelectorAll('.close');
 
+      emailThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+          const emailId = thumbnail.getAttribute('data-email-id');
+          const modal = document.getElementById(emailId);
+          modal.style.display = 'block';
+        });
+      });
+
+      closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          button.closest('.email-modal').style.display = 'none';
+        });
+      });
+
+      window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('email-modal')) {
+          event.target.style.display = 'none';
+        }
+      });
+    });
+  </script>
+	  <!--thus endeth making it scrollable pt 3 -->
   <footer>
     <p>Contact: your-email@example.com</p>
   </footer>
