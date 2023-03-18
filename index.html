@@ -7,53 +7,50 @@
   <title>Digital Fundraiser Portfolio</title>
 </head>
 <body>
-  <!-- Your existing code -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#emails">High-Performing Emails</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <!-- Add your resume content here, either as text or a link to a PDF. -->
+  </section>
+
+  <section id="campaigns">
+    <h2>Campaigns</h2>
+    <ul>
+      <!-- Add campaign items here. -->
+      <li>Campaign 1</li>
+      <li>Campaign 2</li>
+      <!-- ... -->
+    </ul>
+  </section>
 
   <section id="emails">
     <h2>High-Performing Emails</h2>
-    <div class="email-thumbnails">
-      <div class="email-thumbnail" data-email-id="email1">
-        <img src="path/to/email1-thumbnail.jpg" alt="Email 1 thumbnail">
-        <p>Email 1 Title</p>
-      </div>
-      <!-- Add more email thumbnails here -->
-    </div>
-
-    <div class="email-modal" id="email1">
-      <div class="email-modal-content">
-        <span class="close">&times;</span>
-        <!-- Your email HTML content goes here -->
+    <div class="email-container">
+      <h3>Email 1: Crist for Governor</h3>
+      <button class="show-email-btn" onclick="toggleEmailContent('email1')">Show Email</button>
+      <div id="email1" style="display: none;">
+        <!-- Here starts the email HTML content. -->
+        <!-- ... -->
+        <!-- Here ends the email HTML content. -->
       </div>
     </div>
-    <!-- Add more email modals here -->
+    <!-- Add more email containers as needed. -->
   </section>
 
   <script>
-    // JavaScript code for opening and closing modals
-    document.addEventListener('DOMContentLoaded', function() {
-      const emailThumbnails = document.querySelectorAll('.email-thumbnail');
-      const closeButtons = document.querySelectorAll('.close');
-
-      emailThumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
-          const emailId = thumbnail.getAttribute('data-email-id');
-          const modal = document.getElementById(emailId);
-          modal.style.display = 'block';
-        });
-      });
-
-      closeButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          button.closest('.email-modal').style.display = 'none';
-        });
-      });
-
-      window.addEventListener('click', function(event) {
-        if (event.target.classList.contains('email-modal')) {
-          event.target.style.display = 'none';
-        }
-      });
-    });
+    function toggleEmailContent(emailId) {
+      const emailContent = document.getElementById(emailId);
+      emailContent.style.display = emailContent.style.display === 'none' ? 'block' : 'none';
+    }
   </script>
 </body>
 </html>
