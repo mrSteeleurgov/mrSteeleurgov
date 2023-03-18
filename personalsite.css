@@ -80,6 +80,27 @@ section {
   max-width: 100%;
 }
 
+<!-- Below is the new stylings for the iframes -->
+
+.email-container {
+  display: inline-block;
+  width: 48%;
+  margin: 1%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 767px) {
+  .email-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+<!-- Thus endeth is the new stylings for the iframes -->
+
 footer {
   background-color: #ff69b4;
   color: #fff;
