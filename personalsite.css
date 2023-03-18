@@ -139,3 +139,12 @@ footer {
 .logo-item img {
   max-width: 100%;
 }
+
+/* Resume PDF styles */
+
+.resume-pdf {
+  width: 100%;
+  height: 600px;
+  border: none;
+  box-sizing: border-box;
+}
