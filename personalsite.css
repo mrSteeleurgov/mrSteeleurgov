@@ -117,11 +117,16 @@ footer {
 
 .email-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     height: 600px;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #ccc;
     overflow-y: scroll;
     box-sizing: border-box;
+}
+  
+  .scrollable {
+    max-height: 600px;
+    overflow-y: auto;
 }
