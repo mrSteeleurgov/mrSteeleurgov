@@ -83,6 +83,8 @@ section {
 <!-- Below is the new stylings for the iframes -->
 
 .email-container {
+  background-color: white;
+  padding: 20px; /* Add padding to create some space around the content */
   display: inline-block;
   width: 48%;
   margin: 1%;
@@ -97,6 +99,10 @@ section {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.email-container iframe {
+  border: none;
 }
 
 <!-- Thus endeth is the new stylings for the iframes -->
