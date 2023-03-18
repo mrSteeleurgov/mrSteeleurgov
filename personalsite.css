@@ -1,4 +1,119 @@
-/* Your existing CSS code goes here */
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* General styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb6c1;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #1c1c1c;
+  padding: 1rem 0;
+}
+
+/* Other styles */
+/* ... */
+
+header {
+  background-color: #ff69b4;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  padding: 0.5rem 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.email-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.email-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.email-item img {
+  max-width: 100%;
+}
+
+/* Below is the new stylings for the iframes */
+
+.email-container {
+  background-color: white;
+  padding: 20px; /* Add padding to create some space around the content */
+  display: inline-block;
+  width: 48%;
+  margin: 1%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 767px) {
+  .email-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.email-container iframe {
+  border: none;
+}
+
+/* Thus endeth is the new stylings for the iframes */
+
+footer {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 1rem 0;
+  text-align
+
+    /* Your existing CSS code goes here */
 
 .email-container {
     width: 100%;
