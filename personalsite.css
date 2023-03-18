@@ -80,7 +80,7 @@ section {
   max-width: 100%;
 }
 
-<!-- Below is the new stylings for the iframes -->
+/* Below is the new stylings for the iframes */
 
 .email-container {
   background-color: white;
@@ -105,7 +105,7 @@ section {
   border: none;
 }
 
-<!-- Thus endeth is the new stylings for the iframes -->
+/* Thus endeth is the new stylings for the iframes */
 
 footer {
   background-color: #ff69b4;
