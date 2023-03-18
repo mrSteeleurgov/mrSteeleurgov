@@ -134,6 +134,11 @@ footer {
 .logo-item {
   max-width: 200px;
   text-align: center;
+  margin-right: 20px;
+}
+
+.logo-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .logo-item img {
