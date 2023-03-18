@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  padding: 0.5rem 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.email-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.email-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.email-item img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align
+
+
