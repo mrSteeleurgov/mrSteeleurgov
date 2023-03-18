@@ -117,3 +117,25 @@ footer {
   padding: 1rem 0;
   text-align: center;
 }
+
+/* Resume and Campaigns sections */
+
+#resume, #campaign-logos {
+  margin-bottom: 2rem;
+}
+
+.logo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.logo-item {
+  max-width: 200px;
+  text-align: center;
+}
+
+.logo-item img {
+  max-width: 100%;
+}
